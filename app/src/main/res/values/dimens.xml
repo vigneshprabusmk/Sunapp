@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    //-------- Spinner ---------
+
+
+    //-------- items -----------
+
+
+    <!-- floatingbutton properties-->
+
+
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_28">28dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_35">35dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="dp_180">180dp</dimen>
+    <dimen name="dp_200">200dp</dimen>
+    <dimen name="dp_260">260dp</dimen>
+    <dimen name="dp_300">300dp</dimen>
+
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_30">30sp</dimen>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sunapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/screen1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/screen1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.example.sunapp.ui.Splash"
+            android:exported="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/Theme.Telent.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.sunapp.ui.dashboard.DashboardActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/Theme.Telent.NoActionBar"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity android:name="com.example.sunapp.ui.cart.CartActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/Theme.Telent.NoActionBar"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity android:name="com.example.sunapp.ui.profile.ProfileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/Theme.Telent.NoActionBar"
+            android:windowSoftInputMode="adjustResize"/>
+
+    </application>
+
+</manifest>

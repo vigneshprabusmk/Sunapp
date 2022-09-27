@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Sunapp</string>
+
+
+    <string name="_0">0</string>
+    <string name="movies">New Movies List</string>
+    <string name="products">6 New Movies Coming Soon...</string>
+    <string name="Heros">Based on Heros</string>
+    <string name="Heroins">Based on Heroins</string>
+    <string name="fashion_life">Are you ready to see your dream movies today.\nJoin us</string>
+
+    <string name="shortlist">Shortlist</string>
+    <string name="recommend">Daily Recommendations</string>
+    <string name="like">Like this?</string>
+
+</resources>

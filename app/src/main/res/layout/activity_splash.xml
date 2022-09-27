@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abstractbackground"
+    tools:context="com.example.sunapp.ui.Splash">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/IV_splash1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/screen1"
+        app:layout_constraintBottom_toTopOf="@+id/TV_splash"
+        app:layout_constraintDimensionRatio="1.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/IV_splash"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/spcl_sale"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="4:5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IV_splash1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/TV_splash"
+        style="@style/Text.Bold.Large"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="cursive"
+        android:text="@string/fashion_life"
+        android:textAlignment="textStart"
+        android:textColor="@color/new_sun"
+        android:textSize="@dimen/sp_30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

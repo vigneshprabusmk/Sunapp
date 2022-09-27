@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abstractbackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMatches"
+        style="@style/Text.Regular.ExtraLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/movies"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/IV_Cart"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvProduct"
+        style="@style/Text.Regular.ExtraLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/products"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMatches" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCartCount"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_28"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/circle_background"
+        android:elevation="@dimen/dp_8"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingEnd="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_8"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMatches"
+        app:layout_constraintEnd_toStartOf="@+id/IV_Cart"
+        app:layout_constraintTop_toTopOf="@+id/tvMatches"
+        tools:text="10" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProduct">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
+                android:id="@+id/RV_dashBoardRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spanCount="2"
+                tools:itemCount="10"
+                tools:listitem="@layout/list_recycler" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHero"
+                style="@style/Text.Regular.ExtraLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="@string/Heros"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RV_dashBoardRecycler" />
+
+
+            <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
+                android:id="@+id/RV_dashBoardRecyclerhero"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_200"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHero"
+                app:spanCount="2"
+                tools:itemCount="10"
+                tools:listitem="@layout/list_recycler1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHeroin"
+                style="@style/Text.Regular.ExtraLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="@string/Heroins"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RV_dashBoardRecyclerhero" />
+
+            <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
+                android:id="@+id/RV_dashBoardRecyclerheroin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_200"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHeroin"
+                app:spanCount="2"
+                tools:itemCount="10"
+                tools:listitem="@layout/list_recycler1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
