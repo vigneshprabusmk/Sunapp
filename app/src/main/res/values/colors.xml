@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_200">#010E55</color>
+    <color name="purple_700">#010E55</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
@@ -18,9 +18,9 @@
     <color name="new_sun">#FFAE10</color>
 
 
-    <color name="colorPrimary">#B30A1E</color>
-    <color name="colorPrimaryDark">#B30A1E</color>
-    <color name="colorAccent">#B30A1E</color>
+    <color name="colorPrimary">#010E55</color>
+    <color name="colorPrimaryDark">#010E55</color>
+    <color name="colorAccent">#010E55</color>
     <color name="colorWhite">#FFFFFF</color>
 
     <color name="colorSplashBackground">#B30A1E</color>
