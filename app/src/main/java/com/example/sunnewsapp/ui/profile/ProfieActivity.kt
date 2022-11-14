@@ -38,7 +38,7 @@ class ProfileActivity : BaseActivity() {
         profileDESCRIPTION = bundle?.getString("Bdescription")
         profileVIDEO = bundle?.getString("Bvideo")
 
-        binding.tvID.text = "$profileNAME\nTrailer"
+        binding.tvID.text = profileNAME
         binding.nameTxt.text = profileNAME
         binding.DescriptionTxt.text = profileDESCRIPTION
 

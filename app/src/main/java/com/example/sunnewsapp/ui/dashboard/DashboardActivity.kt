@@ -109,7 +109,7 @@ class DashboardActivity : BaseActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun cartcount(item:List<MyData>) {
-        binding.tvCartCount.text = item.size.toString()+" new"
+        binding.tvCartCount.text = item.size.toString()+" news"
         callAdapter(item)
     }
 
