@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">Sunapp</string>
+    <string name="app_name">SunNewsapp</string>
 
 
     <string name="_0">0</string>
-    <string name="movies">New Movies List</string>
+    <string name="movies">News List</string>
     <string name="products">6 New Movies Coming Soon...</string>
-    <string name="Heros">Based on Heros</string>
-    <string name="Heroins">Based on Heroins</string>
+    <string name="Heros">Based on Breaking News</string>
+    <string name="Heroins">Based on Headlines</string>
     <string name="fashion_life">Are you ready to see your dream movies today.\nJoin us</string>
 
     <string name="shortlist">Shortlist</string>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sunapp">
+    package="com.example.sunnewsapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/screen1"
+        android:icon="@drawable/sun_news1"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/screen1"
+        android:roundIcon="@mipmap/sun_news1"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.example.sunapp.ui.Splash"
+            android:name="com.example.sunnewsapp.ui.Splash"
             android:exported="true"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/Theme.Telent.NoActionBar"
@@ -26,17 +26,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.sunapp.ui.dashboard.DashboardActivity"
+        <activity android:name="com.example.sunnewsapp.ui.dashboard.DashboardActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/Theme.Telent.NoActionBar"
             android:windowSoftInputMode="adjustResize"/>
 
-        <activity android:name="com.example.sunapp.ui.cart.CartActivity"
+        <activity android:name="com.example.sunnewsapp.ui.cart.CartActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/Theme.Telent.NoActionBar"
             android:windowSoftInputMode="adjustResize"/>
 
-        <activity android:name="com.example.sunapp.ui.profile.ProfileActivity"
+        <activity android:name="com.example.sunnewsapp.ui.profile.ProfileActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/Theme.Telent.NoActionBar"
             android:windowSoftInputMode="adjustResize"/>
